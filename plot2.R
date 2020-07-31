@@ -22,6 +22,6 @@ dataSubset <- subset(dataPower, Date >= "2007-02-01" & Date <= "2007-02-02")
 
 png("plot2.png", width = 480, height = 480)
 
-with(dataSubset, plot(Global_active_power~Time, type = "l"))
+with(dataSubset, plot(Global_active_power~Time, type = "l", ylab = "Global Active Power (kilowatts)" ))
 
 dev.off()
